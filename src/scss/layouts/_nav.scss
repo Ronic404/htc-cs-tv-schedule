@@ -8,11 +8,12 @@
   display: flex;
 }
 
-.menu__item {
+.menu__item h2{
   @include text(2.8rem, 1.2, $text-dark);
   cursor: pointer;
   padding-bottom: 10px;
   margin: 0 24px;
+  font-weight: 500;
 
   &_active {
     color: $text-red;

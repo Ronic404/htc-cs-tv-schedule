@@ -1,0 +1,67 @@
+.movies {
+  padding-bottom: 70px;
+}
+
+.movies__title {
+  @include text(2.4rem, 1.2, $text-dark);
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+.movies-list {
+  display: flex;
+  height: 440px;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.movie__item {
+  width: 23%;
+}
+
+.movie-poster {
+  @extend %item-shadow-border;
+  height: 375px;
+}
+
+.movie-title {
+  @include text(2rem, 1.2, $text-dark);
+  margin-top: 15px;
+}
+
+.genres-list {
+  display: flex;  
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.genre__item {
+  @extend %item-shadow-border;
+  height: 210px;
+  width: 23%;
+  position: relative;
+  
+  &:nth-child(4n+1) {
+    background:$bg-genre-1-normal;
+  }
+
+  &:nth-child(4n+2) {
+    background:$bg-genre-2-normal;
+  }
+
+  &:nth-child(4n+3) {
+    background:$bg-genre-3-normal;
+  }
+
+  &:nth-child(4n+4) {
+    background:$bg-genre-4-normal;
+  }
+}
+
+.genre-title {
+  position: absolute;
+  @include text(2rem, 1.2, $text-light);
+  width: 100%;
+  text-align: center;
+  bottom: 25px;
+}

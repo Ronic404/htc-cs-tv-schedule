@@ -3,8 +3,11 @@
 
 @import './scss/abstracts/variables';
 @import './scss/abstracts/mixins';
+@import './scss/abstracts/placeholders';
 
 @import './scss/layouts/header';
 @import './scss/layouts/nav';
+@import './scss/layouts/movies';
+@import './scss/layouts/footer';
 
 @import './scss/components/buttons';

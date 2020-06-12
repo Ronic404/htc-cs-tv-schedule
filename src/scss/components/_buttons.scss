@@ -4,9 +4,11 @@
   border: none;
   outline: none;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .search__button {
+  @include text(1.6rem, 1.2, $text-red);  
   background-color: transparent;
 }
 

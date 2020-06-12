@@ -32,16 +32,14 @@
   border: none;
   border-bottom: 1px solid $input-border-dark;
   width: 320px;
+  font-weight: 500;
 
   &::placeholder {
     color: $text-placeholder;
+    font-weight: 400;
   }
 
   &:focus {
     outline: none;
   }
-}
-
-.search__button {
-  @include text(1.6rem, 1.2, $text-red);
 }
