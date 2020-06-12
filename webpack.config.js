@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: ['./src/index.js', './src/img/logos/header-logo.png'],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -28,7 +28,7 @@ module.exports = {
         loader: 'babel-loader',
       },
       {
-        test: /(png|ico|jpe?g|gif)$/i,
+        test: /(png|ico|jpe?g|gif|svg)$/i,
         loader: 'file-loader',
       },
       {
