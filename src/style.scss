@@ -2,3 +2,9 @@
 @import './scss/base/fonts';
 
 @import './scss/abstracts/variables';
+@import './scss/abstracts/mixins';
+
+@import './scss/layouts/header';
+@import './scss/layouts/nav';
+
+@import './scss/components/buttons';

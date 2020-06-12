@@ -6,7 +6,7 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-  <header class="header">
+  <header class="header wrapper">
     <div class="header-logo">
       <div class="header-logo__image"></div>
       <h1 class="header-logo__title">Видеосервис</h1>
@@ -14,13 +14,13 @@
     <div class="header-search">
       <form action="#" method="get" class="search">
         <input type="text" class="search__area" placeholder="Поиск..."></input>
-        <button type="button" class="search__button">Найти</button>
+        <button type="button" class="button search__button">Найти</button>
       </form>      
     </div>
     <button type="button" class="log-in-button button">Войти</button>
   </header>
 
-  <main>
+  <main class="wrapper">
     <nav class="nav">
       <ul class="menu">
         <li class="menu__item menu__item-movies"><h2>Фильмы</h2></li>
@@ -188,7 +188,7 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer wrapper">
     <div class="footer-logo__image"></div>
     <div class="footer-description">
       <p class="footer-description__address">
