@@ -14,10 +14,15 @@
     <div class="header-search">
       <form action="#" method="get" class="search">
         <input type="text" class="search__area" placeholder="Поиск..."></input>
-        <button type="button" class="button search__button">Найти</button>
+        <button type="button" class="button white-button">Найти</button>
       </form>      
     </div>
-    <button type="button" class="log-in-button button">Войти</button>
+    <div class="header-user hide">
+      <p class="header-user__name"></p>
+      <button type="button" class="button white-button log-out-button">Выйти</button>
+    </div>
+    <button type="button" class="log-in-button button hide">Войти</button>
+    <input class="hide" type="text" name="name" id="change-name" placeholder="Введи новое имя" autocomplete="off" maxlength="12">
   </header>
 
   <main class="wrapper">
@@ -34,19 +39,46 @@
         <div>
           <ul class="movies-list">
             <li class="movie__item">
-              <div class="movie-poster poster-1"></div>
+              <div class="movie-poster poster-1">
+                <p class="movie__description">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda,
+                  delectus tenetur animi ipsam quibusdam repellat ut aspernatur aperiam
+                  natus sint voluptatibus modi dicta porro voluptas, cum consequuntur
+                  expedita ad illum at similique corporis magnam consectetur.
+                </p>
+              </div>
               <div class="movie-title">Мульт в кино. Выпуск №103. Некогда грустить!</div>
             </li>
             <li class="movie__item">
-              <div class="movie-poster poster-2"></div>
+              <div class="movie-poster poster-2">
+                <p class="movie__description">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda,
+                  delectus tenetur animi ipsam quibusdam repellat ut aspernatur aperiam
+                  natus sint voluptatibus modi dicta porro voluptas, cum consequuntur
+                  expedita ad illum at similique corporis magnam consectetur.
+                </p>
+              </div>
               <div class="movie-title">Новый Бэтмен</div>
             </li>
             <li class="movie__item">
-              <div class="movie-poster poster-3"></div>
+              <div class="movie-poster poster-3">
+                <p class="movie__description">
+                  Фильм повествует о череде событий, произошедших в Голливуде в 1969 году,
+                  на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф
+                  Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.
+                </p>
+              </div>
               <div class="movie-title">Однажды... в Голливуде</div>
             </li>
             <li class="movie__item">
-              <div class="movie-poster poster-4"></div>
+              <div class="movie-poster poster-4">
+                <p class="movie__description">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda,
+                  delectus tenetur animi ipsam quibusdam repellat ut aspernatur aperiam
+                  natus sint voluptatibus modi dicta porro voluptas, cum consequuntur
+                  expedita ad illum at similique corporis magnam consectetur.
+                </p>
+              </div>
               <div class="movie-title">Стриптизёрши</div>
             </li>
           </ul>
@@ -192,7 +224,7 @@
       </ul>
     </section>
 
-    <section class="pop-up">
+    <section class="pop-up hide">
       <form action="#" class="form-reg hide">
         <h4 class="pop-up__title form-reg__title"></h4>
         <input type="text" name="login" id="form-reg-login">
@@ -201,11 +233,13 @@
       </form>
       <form action="#" class="form-auth">
         <h4 class="pop-up__title form-auth__title">Вход</h4>
-        <input type="text" name="login" id="form-auth-login" placeholder="Логин">
-        <input type="password" name="password" id="form-auth-password" placeholder="Пароль">
+        <input type="text" name="login" id="form-auth-login" placeholder="Логин" autocomplete="off" maxlength="12" required>
+        <p class="error login-error hide">Введи логин</p>
+        <input type="password" name="password" id="form-auth-password" placeholder="Пароль" required>
+        <p class="error password-error hide">Введи пароль</p>
         <input type="checkbox" name="remember" id="remember">
         <label for="remember">Запомнить</label>
-        <button class="button log-in-button pop-up-button" type="submit">Войти</button>
+        <button class="button log-in-button pop-up-button" type="submit" id="auth-button">Войти</button>
       </form>
     </section>
   </main>

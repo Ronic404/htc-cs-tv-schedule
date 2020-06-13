@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .header-logo {
@@ -24,4 +25,15 @@
 
 .header-search {
   display: flex;
+}
+
+.header-user {
+  display: flex;
+  align-items: center;
+}
+
+.header-user__name {
+  @include text(1.6rem, 1.2, $text-dark);
+  font-weight: 500;
+  cursor: pointer;
 }
