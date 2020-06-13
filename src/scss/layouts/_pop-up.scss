@@ -1,0 +1,27 @@
+.pop-up {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: $bg-pop-up-fade;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-auth {
+  box-sizing: border-box;
+  height: 400px;
+  width: 300px;
+  background: $bg-pop-up;
+  border-radius: 8px;
+  padding: 36px;
+  position: relative;
+}
+
+.pop-up__title {
+  @include text(2.8rem, 1.2, $text-dark);
+  font-weight: 500;
+  text-align: center;
+}

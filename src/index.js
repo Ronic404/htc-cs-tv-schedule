@@ -3,7 +3,7 @@ import './img/logos/header-logo.svg';
 import './img/logos/footer-logo.svg';
 
 import {
-  MENU_MOVIES, MENU_TV_CHANNELS,
+  MENU_MOVIES, MENU_TV_CHANNELS, LOG_IN_BUTTON, POP_UP_PAGE,
 } from './js/variables.js';
 
 import pageSwitcher from './js/pageSwitcher.js';
@@ -25,6 +25,11 @@ MENU_TV_CHANNELS.addEventListener('click', () => {
   MENU_TV_CHANNELS.classList.add('menu__item_active');
   localStorage.setItem('page', 'tv-channels');
   pageSwitcher();
+});
+
+LOG_IN_BUTTON.addEventListener('click', () => {
+  document.body.classList.add('overflow-hidden');
+  POP_UP_PAGE.classList.remove('hide');
 });
 
 pageSwitcher();
