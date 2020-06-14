@@ -2,10 +2,15 @@
   display: flex;
   justify-content: center;
   padding-top: 45px;
+
 }
 
 .menu {
   display: flex;
+  
+  @media screen and(max-width: 550px) {
+    flex-direction: column;
+  }
 }
 
 h2 {

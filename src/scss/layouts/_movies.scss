@@ -9,14 +9,8 @@
 }
 
 .movies-list {
-  display: flex;
   height: 440px;
-  justify-content: space-between;
   margin-top: 16px;
-}
-
-.movie__item {
-  width: 23%;
 }
 
 .movie-poster {
@@ -25,6 +19,7 @@
   height: 370px;
   overflow: hidden;
   position: relative;
+  background-size: cover !important;
 
   &:hover .movie__description {
     display: block;
@@ -66,14 +61,12 @@
 }
 
 .genres-list {
-  display: flex;  
-  justify-content: space-between;
   margin-top: 16px;
 }
 
 .genre__item {
   @extend %item-shadow-border;
-  height: 210px;
+  height: 210px !important;
   width: 23%;
   position: relative;
   opacity: 0.8;

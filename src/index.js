@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 import './style.scss';
 
 import './img/logos/header-logo.svg';
@@ -10,6 +11,10 @@ import {
 import './js/changeName.js';
 import pageSwitcher from './js/pageSwitcher.js';
 import setUser from './js/setUser.js';
+
+/* ===== SWIPER ===== */
+import Swiper from 'swiper';
+import '../node_modules/swiper/css/swiper.min.css';
 
 if (!localStorage.getItem('page')) {
   localStorage.setItem('page', 'movies');
@@ -39,3 +44,21 @@ MENU_TV_CHANNELS.addEventListener('click', () => {
 
 pageSwitcher();
 setUser();
+
+// eslint-disable-next-line no-unused-vars
+const mySwiper = new Swiper('.swiper-container', {
+  direction: 'horizontal',
+  slidesPerView: 1,
+  spaceBetween: 20,
+  breakpoints: {
+    680: {
+      slidesPerView: 2,
+    },
+    980: {
+      slidesPerView: 3,
+    },
+    1280: {
+      slidesPerView: 4,
+    },
+  },
+});

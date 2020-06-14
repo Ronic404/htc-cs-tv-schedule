@@ -4,6 +4,10 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+
+  @media screen and(max-width: 1000px) {
+    flex-direction: column;
+  }
 }
 
 .header-logo {
@@ -29,7 +33,9 @@
 
 .header-user {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
+  width: 170px;
 }
 
 .header-user__name {

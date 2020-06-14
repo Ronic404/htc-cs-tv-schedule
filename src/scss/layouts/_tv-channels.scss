@@ -1,7 +1,7 @@
 .tv-channels {
   margin-top: 25px;
   margin-bottom: 70px;
-  height: 654px;
+  height: 667px;
   overflow-y: scroll;
   padding-right: 8px;
 }
@@ -16,6 +16,11 @@
 
   &:first-child {
     margin-top: 0;
+  }
+
+  @media screen and(max-width: 550px) {
+    flex-direction: column;
+    padding: 10px;
   }
 }
 
@@ -46,6 +51,10 @@
 
 .tv-channel__schedule {
   width: 70%;
+
+  @media screen and(max-width: 550px) {
+    width: 100%;
+  }
 }
 
 .channel-name {

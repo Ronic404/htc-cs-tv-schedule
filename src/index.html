@@ -14,7 +14,7 @@
     <div class="header-search">
       <form action="#" method="get" class="search">
         <input type="text" class="search__area" placeholder="Поиск..."></input>
-        <button type="button" class="button white-button">Найти</button>
+        <button type="button" class="button search-button white-button">Найти</button>
       </form>      
     </div>
     <div class="header-user hide">
@@ -36,9 +36,9 @@
     <section class="movies hide">
       <div class="new-movies">
         <h3 class="movies__title">🔥 Новинки</h3>
-        <div>
-          <ul class="movies-list">
-            <li class="movie__item">
+        <div class="swiper-container">
+          <ul class="movies-list swiper-wrapper">
+            <li class="movie__item swiper-slide">
               <div class="movie-poster poster-1">
                 <p class="movie__description">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda,
@@ -49,7 +49,7 @@
               </div>
               <div class="movie-title">Мульт в кино. Выпуск №103. Некогда грустить!</div>
             </li>
-            <li class="movie__item">
+            <li class="movie__item swiper-slide">
               <div class="movie-poster poster-2">
                 <p class="movie__description">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda,
@@ -60,7 +60,7 @@
               </div>
               <div class="movie-title">Новый Бэтмен</div>
             </li>
-            <li class="movie__item">
+            <li class="movie__item swiper-slide">
               <div class="movie-poster poster-3">
                 <p class="movie__description">
                   Фильм повествует о череде событий, произошедших в Голливуде в 1969 году,
@@ -70,7 +70,7 @@
               </div>
               <div class="movie-title">Однажды... в Голливуде</div>
             </li>
-            <li class="movie__item">
+            <li class="movie__item swiper-slide">
               <div class="movie-poster poster-4">
                 <p class="movie__description">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda,
@@ -86,21 +86,21 @@
       </div>
       <div class="genres-movies">
         <h3 class="movies__title">Жанры</h3>
-        <div>
-          <ul class="genres-list">
-            <li class="genre__item">
+        <div class="swiper-container">
+          <ul class="genres-list swiper-wrapper">
+            <li class="genre__item swiper-slide">
               <div class="genre__smile">😁</div>
               <div class="genre-title">Комедии</div>
             </li>
-            <li class="genre__item">
+            <li class="genre__item swiper-slide">
               <div class="genre__smile">😭</div>
               <div class="genre-title">Драмы</div>
             </li>
-            <li class="genre__item">
+            <li class="genre__item swiper-slide">
               <div class="genre__smile">👽</div>
               <div class="genre-title">Фантастика</div>
             </li>
-            <li class="genre__item">
+            <li class="genre__item swiper-slide">
               <div class="genre__smile">👻</div>
               <div class="genre-title">Ужасы</div>
             </li>
@@ -225,12 +225,12 @@
     </section>
 
     <section class="pop-up hide">
-      <form action="#" class="form-reg hide">
+      <!-- <form action="#" class="form-reg hide">
         <h4 class="pop-up__title form-reg__title"></h4>
         <input type="text" name="login" id="form-reg-login">
         <input type="password" name="password" id="form-reg-password">
         <button type="submit">Зарегистрироваться</button>
-      </form>
+      </form> -->
       <form action="#" class="form-auth">
         <h4 class="pop-up__title form-auth__title">Вход</h4>
         <input type="text" name="login" id="form-auth-login" placeholder="Логин" autocomplete="off" maxlength="12" required>
